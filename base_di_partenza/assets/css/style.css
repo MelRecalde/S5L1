@@ -20,8 +20,6 @@ hr {
     display: none;
 }
 
-/* rimuove l'elemento */
-
 /* HEADER */
 header {
     background: rgb(0, 160, 198);
@@ -61,28 +59,6 @@ header nav li a::before {
     content: "\22c6\0020";
 }
 
-@media screen and (max-width: 320px) {
-    header {
-        padding: 0.5em;
-        font-size: xx-small;
-        font-weight: 570;
-    }
-
-    header div img {
-        width: 120px;
-        margin-bottom: 0;
-    }
-
-    header li {
-        margin-bottom: 2em;
-    }
-
-    header li a {
-        font-weight: 570;
-    }
-}
-
-
 /* MAIN */
 main {
     background-color: #fff;
@@ -114,26 +90,6 @@ section h2 {
     padding: 3px;
 }
 
-@media screen and (min-width: 320px) {
-    main {
-        padding-top: 1.5em;
-        font-size: small;
-    }
-    h1 {
-        line-height: 1.2;
-    }
-    article p {
-        font-size: xx-small;
-    }
-    article ul {
-       /* font-size: x-small;*/
-        width: 90%;
-        margin-left: 1.5em;
-    }
-    article ul li {
-        font-size: xx-small;
-    }
-}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 h1 {
@@ -184,15 +140,6 @@ iframe {
     border-radius: 20px;
 }
 
-@media screen and (min-width: 320px) {
-    h2 {
-        font-size: xx-small;
-    }
-    ol {
-    font-size: xx-small;
-    }
-}
-
 /* TABELLE */
 table {
     margin-bottom: 2em;
@@ -227,15 +174,6 @@ tbody tr:last-of-type {
     border-bottom: 2px solid #3f6bca;
 }
 
-@media screen and (min-width:320px){
-    table {
-        font-size: xx-small;
-        width: 7rem;
-    }
-    thead tr th {
-        font-size: 9px;
-    }
-}
 
 /* FORM */
 input {
@@ -275,7 +213,6 @@ aside div p:last-child {
     text-align: right;
 }
 
-
 /* FOOTER */
 footer {
     background: rgb(53, 53, 53);
@@ -290,3 +227,70 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+
+@media screen and (min-width:320px) {
+    iframe {
+        height: 50;
+    }
+        table {
+            font-size: 10px;
+            height: 50px;
+        }
+    
+        thead tr th {
+            font-size: 8px;
+        }
+    
+        tbody tr td {
+            font-size: 9px;
+            padding: 7px;
+        }
+        h2 {
+            font-size: xx-small;
+        }
+    
+        ol {
+            font-size: xx-small;
+        }
+        main {
+            padding-top: 1.5em;
+            font-size: small;
+        }
+    
+        h1 {
+            line-height: 1.2;
+        }
+    
+        article p {
+            font-size: xx-small;
+        }
+    
+        article ul {
+            /* font-size: x-small;*/
+            width: 90%;
+            margin-left: 1.5em;
+        }
+    
+        article ul li {
+            font-size: xx-small;
+        }
+        header {
+            padding: 0.5em;
+            font-size: xx-small;
+            font-weight: 570;
+        }
+    
+        header div img {
+            width: 120px;
+            margin-bottom: 0;
+        }
+    
+        header li {
+            margin-bottom: 2em;
+        }
+    
+        header li a {
+            font-weight: 570;
+        }
+    }
